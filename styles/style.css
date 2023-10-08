@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: grid;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,4 +36,80 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+
+}
+
+.result {
+
+}
+
+.result__video-container {
+
+}
+
+.result__video {
+
+}
+/* form content */
+.search-form {
+
+}
+
+.search-form__fieldset {
+
+}
+
+.search-form__fieldset-title{
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+
+}
+
+.search-form__checkbox-list {
+
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.button {
+
+}
+
+.search-form__submit-button {
+
+}
+
+.content__details {
+
+}
+
+.title {
+
+}
+
+.content__accent {
+
+}
+
+.content__list {
+
 }
