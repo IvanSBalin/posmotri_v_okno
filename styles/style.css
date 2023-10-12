@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-  display: grid;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -39,7 +38,13 @@ ol {
 }
 
 .content {
-
+  display: grid;
+  grid-template-columns: 711px 399px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  width: 1140px;
+  margin: 133px 0;
 }
 
 .result {
@@ -47,69 +52,225 @@ ol {
 }
 
 .result__video-container {
-
+  position: relative;
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
 }
 
 .result__video {
-
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 /* form content */
 .search-form {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .search-form__fieldset {
-
+  border: none;
 }
 
 .search-form__fieldset-title{
-
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: px;
 }
 
 .search-form__label {
-
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  line-height: 1.35;
 }
 
 .search-form__label-text {
-
+  appearance: none;
 }
 
 .search-form__textfield {
-
+  display: flex;
+  min-width: 225px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .search-form__checkbox-list {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 15px;
 }
 
 .search-form__checkbox {
-
+  border: #fff solid 1px;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
 }
 
 .search-form__pseudo-checkbox {
-
-}
-
-.button {
-
+  border: #fff solid 1px;
+  width: 19px;
+  height: 19px;
 }
 
 .search-form__submit-button {
-
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .content__details {
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .title {
-
+  color: #FFF;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.93;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .content__accent {
-
+  color: #545050;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
 }
 
 .content__list {
+  position: relative;
+  display: flex;
+  height: 298px;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  width: 200px;
+  color: #FFF;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #FFF;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9; /* 90% */
+  padding: 6px 0;
+}
+
+.preloader {
+
+}
+
+.content__list-item:not(:last-child) {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.button {
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 194px;
+  height: 34px;
+  outline: #FFFFFF solid 1px;
+  background-color: transparent;
+  border-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.more-button-template {
+  width: 399px;
+  height: 34px;
+}
+
+.more-button {
+  width: 396px;
+  height: 34px;
+  gap: 10px;
+  outline: #FFFFFF solid 1px;
+  margin-left: 1px ;
+  margin-bottom: 1px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
