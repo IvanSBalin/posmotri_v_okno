@@ -97,11 +97,15 @@ ol {
   appearance: none;
 }
 
+.search-form__label-text:focus {
+  outline: none;
+}
+
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
-.search-form__textfield {
+.search-form__textField {
   display: flex;
   min-width: 225px;
   min-height: 27px;
@@ -123,11 +127,11 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__textfield:focus {
+.search-form__textField:focus {
   outline: none;
 }
 
-.search-form__label:has(.search-form__textfield:active) {
+.search-form__label:has(.search-form__textField:active) {
   outline: none;
   border-left: 1px solid #FFF;
   border-right: 1px solid #FFF;
@@ -174,7 +178,7 @@ ol {
 }
 
 .search-form__submit-button {
-  color: #FFF;
+  color: #fff;
 }
 
 .content__details {
