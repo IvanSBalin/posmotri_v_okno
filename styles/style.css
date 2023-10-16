@@ -206,7 +206,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__card-link {
@@ -223,6 +223,8 @@ ol {
   line-height: 100%; /* 30px */
   text-transform: uppercase;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__card-link:focus {
@@ -243,6 +245,8 @@ ol {
   line-height: 0.9; /* 90% */
   padding: 6px 0;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__card-link:hover {
@@ -252,6 +256,10 @@ ol {
 }
 
 .content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link_current {
   background-color: #545050;
 }
 
